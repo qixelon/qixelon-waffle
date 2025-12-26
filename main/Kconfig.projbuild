@@ -1,0 +1,9 @@
+menu "Qixelon Waffle"
+
+config WIFI_HOSTNAME
+    string "Wifi Hostname"
+    default "Qixelon"
+    help
+        DHCP hostname
+
+endmenu

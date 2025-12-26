@@ -496,6 +496,12 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Qixelon Waffle
+#
+CONFIG_WIFI_HOSTNAME="Qixelon-dev"
+# end of Qixelon Waffle
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEBUG=y
