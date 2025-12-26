@@ -110,7 +110,8 @@ esp_err_t wifi_connect(const char *ssid,
             strncpy((char *)cfg.sta.password, password, sizeof(cfg.sta.password)-1);
             break;
         case WIFI_EXT_OWE:
-            cfg.sta.threshold.authmode = WIFI_AUTH_OWE;
+            cfg.sta.threshold.authmode = WIFI_AUTH_OPEN;
+            cfg.sta.owe_enabled = true;
             break;
         default:
             return ESP_ERR_INVALID_ARG;
