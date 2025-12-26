@@ -4,12 +4,12 @@
 #include "esp_wifi_types.h"
 
 typedef enum {
-    WIFI_EXT_OPEN,
-    WIFI_EXT_WPA2,
-    WIFI_EXT_WPA3,
-    WIFI_EXT_OWE,
-    WIFI_EXT_ENTERPRISE_WPA2,
-    WIFI_EXT_ENTERPRISE_WPA3
+    WIFI_EXT_OPEN = 0,             // Open network
+    WIFI_EXT_WPA2 = 1,             // WPA2-Personal
+    WIFI_EXT_WPA3 = 2,             // WPA3-Personal
+    WIFI_EXT_OWE = 3,              // Enhanced Open (OWE)
+    WIFI_EXT_ENTERPRISE_WPA2 = 4,  // WPA2-Enterprise (login+password)
+    WIFI_EXT_ENTERPRISE_WPA3 = 5   // WPA3-Enterprise (login+password)
 } wifi_auth_mode_ext_t;
 
 esp_err_t wifi_init(void);
